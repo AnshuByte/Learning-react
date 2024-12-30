@@ -9,10 +9,14 @@ import MainContent from "./components/MainContent.jsx";
 import Greeting from "./components/Greeting.jsx";
 import ProductInfo from "./components/ProductInfo.jsx";
 import UserList from "./components/UserList.jsx";
+import Person from "./components/Person.jsx";
+import Card from "./components/Card.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    {/* <App /> */}
+    <App />
+    <Card />
+    <WelcomeMessage />
     <Header />
     <MainContent />
     <ProductInfo />
@@ -20,6 +24,7 @@ createRoot(document.getElementById("root")).render(
     <Greeting />
     <Footer />
     <UserList />
+    <Person age={23} name="Anshu" section="A" />
 
     {/* <WelcomeMessage /> */}
   </StrictMode>
