@@ -1,13 +1,25 @@
 import React from "react";
-
+import "./index.css";
 const Cart = () => {
   const items = ["Earbuds", "power bank", "New SSD", "T-shirt"];
-
+  const styles = {
+    color: "blue",
+    backgroundColor: "#BCC4DB",
+    padding: "10px",
+  };
   return (
     <div>
-      <h1>Cart 🛒</h1>
+      <h1
+        style={{
+          color: "white",
+          backgroundColor: "#BCC4DB",
+          padding: "10px",
+        }}
+      >
+        Cart 🛒
+      </h1>
       {items.length > 0 && <h2> you have {items.length} in your cart</h2>}
-      <h4> Products</h4>
+      <h4 style={styles}> Products</h4>
       <ul>
         {items.map((item) => (
           <li key={Math.random()}>{item}</li>
