@@ -11,11 +11,19 @@ import ProductInfo from "./components/ProductInfo.jsx";
 import UserList from "./components/UserList.jsx";
 import Person from "./components/Person.jsx";
 import Card from "./components/Card.jsx";
+import Password from "./components/Password.jsx";
+import Weather from "./components/Weather.jsx";
+import UserStatus from "./components/UserStatus.jsx";
+import Greetings from "./components/Greetings.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
+    <Greetings timeOfDay="morning" />
+    <Password />
+    <UserStatus isAdmin={false} loggedIn={true} />
     <App />
     <Card />
+    <Weather temprature={23} />
     <WelcomeMessage />
     <Header />
     <MainContent />
