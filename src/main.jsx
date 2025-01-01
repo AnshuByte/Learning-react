@@ -22,6 +22,10 @@ import UseState from "./components/UseState.jsx";
 import App1 from "./App1.jsx";
 import PrevCount1 from "./components/PrevCount1.jsx";
 import Example1 from "./components/Example1.jsx";
+import EventDemo from "./components/EventDemo.jsx";
+import Counter from "./components/Counter.jsx";
+import TodoList from "./components/TodoList.jsx";
+import LocalStorageEg from "./components/LocalStorageEg.jsx";
 const styles = {
   color: "black",
   backgroundColor: "Green",
@@ -31,6 +35,10 @@ const styles = {
 };
 createRoot(document.getElementById("root")).render(
   <StrictMode>
+    <LocalStorageEg />
+    <TodoList />
+    <Counter />
+    <EventDemo />
     <Example1 />
 
     <PrevCount1 />
