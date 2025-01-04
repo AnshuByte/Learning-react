@@ -1,5 +1,6 @@
 import React from "react";
 import "./index.css";
+import CopyInput from "./components/CopyInput";
 const Cart = () => {
   const items = ["Earbuds", "power bank", "New SSD", "T-shirt"];
   const styles = {
@@ -29,7 +30,12 @@ const Cart = () => {
   );
 };
 const App = () => {
-  return <Cart />;
+  return (
+    <div>
+      <Cart />
+      <CopyInput />
+    </div>
+  );
 };
 
 export default App;

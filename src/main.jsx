@@ -26,6 +26,8 @@ import EventDemo from "./components/EventDemo.jsx";
 import Counter from "./components/Counter.jsx";
 import TodoList from "./components/TodoList.jsx";
 import LocalStorageEg from "./components/LocalStorageEg.jsx";
+import Profile from "./components/Profile.jsx";
+import ShoppingList from "./components/ShoppingList.jsx";
 const styles = {
   color: "black",
   backgroundColor: "Green",
@@ -35,6 +37,9 @@ const styles = {
 };
 createRoot(document.getElementById("root")).render(
   <StrictMode>
+    <App />
+    {/* <ShoppingList />
+    <Profile />
     <LocalStorageEg />
     <TodoList />
     <Counter />
@@ -58,7 +63,7 @@ createRoot(document.getElementById("root")).render(
     <Greetings timeOfDay="morning" />
     <Password />
     <UserStatus isAdmin={false} loggedIn={true} />
-    <App />
+
     <Card />
     <Weather temprature={23} />
     <WelcomeMessage />
@@ -70,7 +75,7 @@ createRoot(document.getElementById("root")).render(
     <Footer />
 
     <UserList />
-    <Person age={23} name="Anshu" section="A" />
+    <Person age={23} name="Anshu" section="A" /> */}
 
     {/* <WelcomeMessage /> */}
   </StrictMode>
