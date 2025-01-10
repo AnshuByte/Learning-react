@@ -20,7 +20,16 @@ const PopupContent = ({ copied }) => {
   return createPortal(
     <section>
       {copied && (
-        <div style={{ position: "absolute", bottom: "3rem" }}>
+        <div
+          style={{
+            position: "absolute",
+            bottom: "3rem",
+            backgroundColor: "white",
+            padding: "10px",
+            color: "black",
+            borderRadius: "5px",
+          }}
+        >
           Copied to ClipBoard
         </div>
       )}
